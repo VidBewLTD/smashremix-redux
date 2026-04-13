@@ -1359,7 +1359,6 @@ scope Toggles {
     dw special_zoom_always
 
     // @ Description
-    // Game Speed strings
     speed_default:;  db "1/1", 000
     speed_5_6_fast:; db "1.2x", 000
     speed_3_4_fast:; db "1.3x", 000
@@ -1367,6 +1366,9 @@ scope Toggles {
     speed_4_7_fast:; db "1.75x", 000
     speed_2_0_fast:; db "2.0x", 000
     speed_3_0_fast:; db "3.0x", 000
+    speed_4_0_fast:; db "4.0x", 000
+    speed_8_0_fast:; db "8.0x", 000
+    speed_16_fast:; db "16x (MAX)", 000
     speed_1_8_slow:; db "1/8", 000
     speed_1_4_slow:; db "1/4", 000
     speed_1_3_slow:; db "1/3", 000
@@ -1383,6 +1385,9 @@ scope Toggles {
     dw speed_4_7_fast
     dw speed_2_0_fast
     dw speed_3_0_fast
+    dw speed_4_0_fast
+    dw speed_8_0_fast
+    dw speed_16_fast
     dw speed_1_8_slow
     dw speed_1_4_slow
     dw speed_1_3_slow
@@ -2387,7 +2392,7 @@ scope Toggles {
     entry_practice_overlay:;            entry_bool("Color Overlays", OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, entry_cinematic_entry)
     entry_cinematic_entry:;             entry("Cinematic Entry", Menu.type.INT, 0, 0, 0, 0, 0, 2, OS.NULL, string_table_frequency, OS.NULL, entry_flash_on_z_cancel)
     entry_flash_on_z_cancel:;           entry_bool("Flash On Z-Cancel", OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, entry_fps)
-    entry_fps:;                         entry("FPS Display *BETA", Menu.type.INT, OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, 0, 2, OS.NULL, string_table_fps, OS.NULL, entry_model_display)
+    entry_fps:;                         entry("FPS Display *UNRELIABLE", Menu.type.INT, OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, 0, 2, OS.NULL, string_table_fps, OS.NULL, entry_model_display)
     entry_model_display:;               entry("Model Display", Menu.type.INT, 0, 0, 1, 0, 0, 2, OS.NULL, string_table_poly, OS.NULL, entry_special_model)
     entry_special_model:;               entry("Special Model Display", Menu.type.INT, OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, 0, 3, OS.NULL, string_table_model, OS.NULL, entry_advanced_hurtbox)
     entry_advanced_hurtbox:;            entry_bool("Advanced Hurtbox Display", OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, entry_hold_to_exit_training)
@@ -2445,7 +2450,7 @@ scope Toggles {
     entry_wall_teching:;                entry_bool("Wall Teching", OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, entry_charged_smashes)
     entry_charged_smashes:;             entry("Charge Smashes", Menu.type.INT, 0, 0, 0, 0, 0, 2, OS.NULL, string_table_charged_smash, OS.NULL, entry_item_containers)
     entry_item_containers:;             entry("Item Containers", Menu.type.INT, 0, 0, 0, 0, 0, 3, OS.NULL, string_table_item_containers, OS.NULL, entry_game_speed)
-    entry_game_speed:;                  entry("Game Speed", Menu.type.INT, 0, 0, 0, 0, 0, 12, OS.NULL, string_table_speed, OS.NULL, entry_special_zoom)
+    entry_game_speed:;                  entry("Game Speed", Menu.type.INT, 0, 0, 0, 0, 0, 15, OS.NULL, string_table_speed, OS.NULL, entry_special_zoom)
     entry_special_zoom:;                entry("Special Zoom (BETA)", Menu.type.INT, 0, 0, 0, 0, 0, 2, OS.NULL, string_table_special_zoom, OS.NULL, entry_blastzone_warp)
     entry_blastzone_warp:;              entry("BlastZone Warp (BETA)", Menu.type.INT, 0, 0, 0, 0, 0, 3, OS.NULL, string_table_blast_zone, OS.NULL, entry_walljump)
     entry_walljump:;                    entry_bool("Wall Jumping (BETA)", OS.FALSE, OS.FALSE, OS.FALSE, OS.FALSE, entry_single_button_mode)

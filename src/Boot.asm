@@ -166,7 +166,7 @@ scope Boot {
         nop
     }
 
-    string_version:; String.insert("Smash Remix v2.0.1 (Debugged v1.3.2)")
+    string_version:; String.insert("Smash Remix Redux v0.3.5dev (Version 2.0.1)")
 
     // @ Description
     // Use larger logo black backsplash
