@@ -11,7 +11,7 @@ insert  "roms/original.z64"
 
 // change ROM name
 origin  0x20
-db  "SMASH REMIX"
+db  "SMASH REMIX REDUX"
 fill 0x34 - origin(), 0x20
 
 // add asm to rom
