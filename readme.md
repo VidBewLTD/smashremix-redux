@@ -1,5 +1,5 @@
-# Smash Remix Debugged
-*A Smash Remix Mod Made by Brob2nd*
+# Smash Remix Redux
+*A Smash Remix Mod Made by Brob2nd, Alexis Nevarez, and others*
 
 Smash Remix Debugged is a mod for the Super Smash Bros. 64 mod, Smash Remix, this mod's purpose is to work as a template for future Smash Remix mods, adding things like new features (mentioned below) or inaccessible stuff now being accessible (like some inaccessible stages and songs now being accessible).
 
